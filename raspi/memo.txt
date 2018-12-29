@@ -1,0 +1,8 @@
+﻿①RasPiでI2Cを有効にする
+
+②I2Cのクロックが早すぎると応答が間に合わないことあるので
+"/boot/config.txt"に以下2行追加
+dtparam=i2c_baudrate=50000
+dtparam=i2c_arm=on
+
+③md.pyを実行するとモーターが左右に回ってから止まる。

@@ -8,7 +8,7 @@ void setup() {
 }
 
 uint8_t adr = 0x10; //Current slave address
-uint8_t adrNew = 0x11; //Current slave address
+uint8_t adrNew = 0x11; //New slave address
 
 void loop() {
   Wire.beginTransmission(adr);
